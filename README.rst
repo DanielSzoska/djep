@@ -142,6 +142,12 @@ into which you can install the Python-requirements::
     $ npm install
     $ pip install -r requirements/dev.txt
 
+If you get an error like ``fatal error: libxml/xmlversion.h: No such file or directory`` try the following::
+
+    $ sudo apt-get install libxml2-dev libxslt1-dev python-dev
+    
+(Source: http://stackoverflow.com/questions/6504810/how-to-install-lxml-on-ubuntu)
+
 With this step also comes `honcho`_ which you can then start with ``honcho
 start`` which starts the dev server on port 8000 which is exposed to port 8080
 on your local host machine.
